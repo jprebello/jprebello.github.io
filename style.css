@@ -1,0 +1,36 @@
+@import url("./header.min.css");
+@import url("./main.min.css");
+@import url("./experiencia.min.css");
+@import url("./formacao.min.css");
+@import url("./contato.min.css");
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+a,
+img {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}

@@ -1,0 +1,84 @@
+.principal {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 100px;
+}
+
+.principal-texto {
+  align-self: center;
+  position: relative;
+}
+
+.principal-texto::before {
+  content: "";
+  background: url("./img/detalhe.svg") no-repeat center;
+  width: 130px;
+  height: 100px;
+  position: absolute;
+  z-index: -1;
+  left: -40px;
+  top: -15px;
+}
+
+.principal-texto > h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  font-family: fira sans, sans-serif;
+}
+
+.principal-texto > p {
+  font-size: 1.5rem;
+  color: #525252;
+  font-family: fira sans, sans-serif;
+}
+
+@media(max-width:920px){
+  .principal-texto>h1{
+    font-size: 3rem;
+  }
+  .principal-texto>p{
+    font-size: 1.25rem;
+  }
+}
+
+@media(max-width:800px){
+  .principal{
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .principal-texto::before{
+    width: 30px;
+    height: 10px;
+    left: 0;
+    top: -10;
+  }
+  .principal-texto>h1{
+    font-size: 2rem;
+  }
+  .principal-texto>p{
+    font-size: 1rem;
+  }
+  .principal>img{
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+@media(max-width:400px){
+  .principal{
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-items: center;
+  }
+  .principal>img{
+    order: 1;
+    width: 200px;
+  }
+  .principal-texto>h1{
+    font-size: 1.625rem;
+  }
+}

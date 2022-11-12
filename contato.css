@@ -1,0 +1,55 @@
+.contato{
+  background-color: #000;
+}
+
+.contato-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 120px 20px 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 100px;
+  align-items: center;
+}
+
+.contato-container>p{
+  font-size: 1.125rem;
+  color: #8f8f8f;
+  font-family: fira sans, sans-serif;
+}
+
+.contato-container>p:first-child{
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #ccc;
+  font-family: fira sans, sans-serif;
+}
+
+.contato-lista{
+  display: grid;
+  gap: 30px;
+}
+
+.contato-lista>li{
+  color: #fff;
+  font-family: fira sans, sans-serif;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+@media(max-width: 800px){
+  .contato-container{
+    grid-template-columns: 1fr;
+  }
+  .contato-container>p:first-child{
+    font-size: 1.25rem;
+    max-width: 40ch;
+  }
+  .contato-lista>li{
+    font-size: 1.5rem;
+  }
+  .contato-container{
+    gap: 40px;
+  }
+}
